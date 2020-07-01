@@ -1,13 +1,11 @@
 header {
-  padding: 134px 0 80px;
+	padding: 134px 0 80px;
 }
-
 @media (min-width: 992px) {
-  header {
-    padding: 156px 0 80px;
-  }
+	header {
+		padding: 156px 0 80px;
+	}
 }
-
 /*section {
   padding: 40px 0;
 }
