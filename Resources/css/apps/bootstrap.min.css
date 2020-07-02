@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
- :root {
+:root {
 	--blue: #007bff;
 	--indigo: #6610f2;
 	--purple: #6f42c1;
@@ -60,7 +60,7 @@ body {
 	line-height: 1.5;
 	color: #212529;
 	text-align: left;
-	background-color: #FFF
+	background-color: #fff
 }
 [tabindex="-1"]:focus {
 	outline: 0!important
@@ -2186,22 +2186,6 @@ a.btn.disabled, fieldset:disabled a.btn {
 	background-color: #6c757d;
 	border-color: #6c757d
 }
-
-@media (prefers-color-scheme: dark) {
-
-	.btn-outline-secondary {
-		color: #ffffff;
-		background-color: transparent;
-		background-image: none;
-		border-color: #ffffff
-	}
-	.btn-outline-secondary:hover {
-		color: #fff;
-		background-color: #ffffff;
-		border-color: #ffffff
-	}
-
-}
 .btn-outline-secondary.focus, .btn-outline-secondary:focus {
 	box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5)
 }
@@ -3526,7 +3510,9 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
 	color: #fff
 }
-
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, .5)
+}
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
 	color: rgba(255, 255, 255, .75)
 }
@@ -3560,9 +3546,10 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	flex-direction: column;
 	min-width: 0;
 	word-wrap: break-word;
+	background-color: #fff;
 	background-clip: border-box;
-	/* border: 1px solid rgba(0, 0, 0, .125); */
-	border-radius: .25rem;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem
 }
 .card>hr {
 	margin-right: 0;
@@ -4981,7 +4968,18 @@ a.bg-warning:focus, a.bg-warning:hover, button.bg-warning:focus, button.bg-warni
 a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:hover {
 	background-color: #bd2130!important
 }
-
+.bg-light {
+	background-color: #f8f9fa!important
+}
+a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
+	background-color: #dae0e5!important
+}
+.bg-dark {
+	background-color: #343a40!important
+}
+a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
+	background-color: #1d2124!important
+}
 .bg-white {
 	background-color: #fff!important
 }
@@ -7207,7 +7205,9 @@ a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:h
 .font-italic {
 	font-style: italic!important
 }
-
+.text-white {
+	color: #fff!important
+}
 .text-primary {
 	color: #007bff!important
 }
