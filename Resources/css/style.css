@@ -62,4 +62,7 @@
         color: rgba(255, 255, 255, .5)
     }
 
+    .text-dark {
+        color: #343a40;
+    }
 }
